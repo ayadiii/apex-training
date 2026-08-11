@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Apex Training</title>
+<meta name="description" content="A premium personal calisthenics and fitness tracker." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&%2360%3B</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div id="app-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-mark">A</div>
+      <span class="brand-name">Apex Training</span>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- injected by router -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="kbd-hint"><kbd>⌘</kbd><kbd>K</kbd><span>Quick nav</span></div>
+    </div>
+  </aside>
+
+  <!-- ============ MOBILE TOP BAR ============ -->
+  <header class="mobile-topbar">
+    <button id="mobile-menu-btn" class="icon-btn" aria-label="Open menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="mobile-brand"><div class="brand-mark small">A</div><span>Apex Training</span></div>
+    <div style="width:36px"></div>
+  </header>
+
+  <!-- ============ MOBILE DRAWER OVERLAY ============ -->
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main id="main-content" class="main-content">
+    <div id="page-root" class="page-root"></div>
+  </main>
+
+  <!-- ============ MOBILE BOTTOM NAV ============ -->
+  <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+    <!-- injected by router -->
+  </nav>
+
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- Command palette -->
+<div id="cmdk-overlay" class="cmdk-overlay">
+  <div class="cmdk-panel">
+    <input id="cmdk-input" class="cmdk-input" placeholder="Jump to a page…" autocomplete="off" />
+    <div id="cmdk-list" class="cmdk-list"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
